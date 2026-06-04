@@ -1,0 +1,32 @@
+llm:
+  provider: "anthropic"
+  model: "claude-sonnet-5"
+  max_tokens: 2000
+  temperature: 0.2
+
+agents:
+  max_tool_iterations: 6        # per-agent tool-calling loop cap
+  max_revision_rounds: 2        # Manager <-> Critic revision loop cap
+
+guardrails:
+  python_exec_timeout_seconds: 15
+  sql_max_rows: 5000
+  allowed_python_modules:
+    - pandas
+    - numpy
+    - math
+    - statistics
+    - scipy
+    - scipy.stats
+    - statsmodels
+    - statsmodels.api
+    - statsmodels.tsa
+    - matplotlib
+    - matplotlib.pyplot
+    - json
+    - datetime
+
+paths:
+  uploads_dir: "data/uploads"
+  reports_dir: "data/reports"
+  charts_dir: "data/reports/charts"
