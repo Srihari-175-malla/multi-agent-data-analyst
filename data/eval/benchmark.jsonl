@@ -1,0 +1,3 @@
+{"dataset_path": "data/sample/sales.csv", "question": "Why did sales decrease last month?"}
+{"dataset_path": "data/sample/sales.csv", "question": "Is there a statistically significant relationship between marketing spend and sales?"}
+{"dataset_path": "data/sample/sales.csv", "question": "Which region and channel combination performs best, and is the difference significant?"}
